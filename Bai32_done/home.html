@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Music - using Marquee and Multimedia</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4, #fbc2eb);
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        marquee {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ff4500;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .audio-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000000;
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="right" behavior="scroll" loop="-1" scrollamount="10">
+        <b>🌟 Faculty of Information Systems 🌟</b>
+    </marquee>
+    
+    <h1>Enjoy the Melody!</h1>
+
+    <div class="logo">
+        <img src="anh.png" alt="Logo" width="200">
+    </div>
+
+    <div class="audio-container">
+        <audio controls>
+            <source src="cartoon-intro-13087.mp3" type="audio/mpeg">
+            Sorry, your browser doesn't support audio playback. Please try a different browser!
+        </audio>
+    </div>
+
+    <footer>
+        🎵 Made with Thanh Ty 🎵
+    </footer>
+</body>
+</html>

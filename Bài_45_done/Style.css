@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Divider styling */
+.divider {
+    height: 2px;
+    background-color: burlywood;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Grid layout for main content */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu main main main main main';
+    column-gap: 30px;
+    width: 100%;
+    padding: 20px 2px;
+    height: fit-content;
+}
+
+.grid-item {
+    width: 320px;
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+    border: 2px solid burlywood;
+    height: fit-content;
+}
+
+.item1 { 
+    grid-area: header;
+    height: 110px;
+    padding: 0 10px;
+}
+
+.item2 { 
+    grid-area: menu;
+    background-image: url(back.jpg);
+    color: blue;
+    align-content: start;
+    padding-top: 30px;
+    height: 500px;
+}
+
+.item3 {
+    grid-area: main;
+    height: 600px;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1 {
+    color: burlywood;
+    padding-left: 10px;
+}
+
+/* Styling for red text outside the table */
+.item3 p {
+    color: red; /* Đặt màu chữ ngoài bảng thành đỏ */
+    font-weight: normal; /* Không bold chữ */
+}
+
+/* Divider for "Basic Materials" list */
+.colored-table {
+    background-color: burlywood; /* Màu nền của bảng */
+    border: 2px solid burlywood; /* Đường viền của bảng */
+    padding: 10px; /* Khoảng cách bên trong bảng */
+    list-style-type: disc; /* Dấu bullet dạng đĩa (●) */
+    list-style-position: inside; /* Đặt bullet nằm bên trong bảng */
+    margin: 0; /* Xóa margin mặc định của danh sách */
+}
+
+
+.colored-table li {
+    color: red; /* Màu chữ */
+    font-weight: normal; /* Không bold */
+    padding: 5px 0; /* Khoảng cách giữa các mục */
+    text-align: left; /* Căn trái */
+}

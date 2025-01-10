@@ -1,0 +1,31 @@
+h3 {
+    height: 50px; /* Chiều cao của h3 */
+    width: 100%; /* Chiều rộng toàn bộ phần tử cha */
+    background: url("hinh/h3.png") no-repeat 0 100%; /* Đặt hình nền cho h3 */
+    margin: 0; /* Loại bỏ khoảng cách ngoài */
+    padding: 0; /* Loại bỏ khoảng cách trong */
+}
+
+ul {
+    margin: 0; /* Loại bỏ khoảng cách ngoài */
+    padding: 10px 10px 25px 45px; /* Khoảng cách trong của ul */
+    background: url("hinh/ul.png") no-repeat 0 100%; /* Đặt hình nền cho ul */
+    list-style-image: url("hinh/li.png"); /* Sử dụng hình ảnh làm kiểu danh sách */
+}
+
+/* Các kiểu cho liên kết */
+a:link {
+    color: red; /* Màu chữ liên kết chưa truy cập */
+}
+
+a:visited {
+    color: green; /* Màu chữ liên kết đã truy cập */
+}
+
+a:hover {
+    color: hotpink; /* Màu khi di chuột vào liên kết */
+}
+
+a:active {
+    color: blue; /* Màu khi nhấn vào liên kết */
+}

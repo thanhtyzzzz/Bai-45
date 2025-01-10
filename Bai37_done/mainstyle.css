@@ -1,0 +1,50 @@
+* {
+    margin: 0; /* Loại bỏ khoảng cách ngoài (mặc định) cho tất cả các phần tử */
+    padding: 0; /* Loại bỏ khoảng cách trong (mặc định) cho tất cả các phần tử */
+}
+
+#container {
+    border: 1px solid blue; /* Đặt viền cho phần tử container với màu xanh dương */
+    background: gray; /* Đặt nền màu xám cho container */
+    float: left; /* Đẩy container về phía bên trái */
+    top: 60px; /* Đặt vị trí của container cách đầu trang 60px */
+    text-indent: 0px; /* Không thụt lề cho văn bản trong container */
+}
+
+#container ul {
+    float: left; /* Đẩy danh sách (ul) về bên trái */
+    list-style: none; /* Loại bỏ các ký hiệu danh sách mặc định (như dấu chấm) */
+}
+
+#container ul li {
+    position: relative; /* Đặt vị trí của các mục danh sách (li) là tương đối để xử lý các phần tử con */
+    float: left; /* Đẩy các mục danh sách về phía bên trái */
+}
+
+#container ul li a {
+    display: block; /* Đảm bảo các liên kết trong <li> chiếm toàn bộ chiều rộng */
+    color: black; /* Màu chữ mặc định là đen */
+    font-weight: bold; /* Làm chữ đậm */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    padding: .3em 6px; /* Thêm khoảng cách bên trong cho liên kết */
+}
+
+#container li a:hover {
+    color: white; /* Màu chữ khi di chuột vào liên kết là trắng */
+    background: orange; /* Màu nền khi di chuột vào liên kết là cam */
+}
+
+#container li ul {
+    position: absolute; /* Đặt vị trí của danh sách con là tuyệt đối để nó hiển thị ngoài dòng chính */
+    display: none; /* Ẩn danh sách con ban đầu */
+    width: 10em; /* Đặt chiều rộng của menu con là 10em */
+}
+
+#container li:hover ul {
+    display: block; /* Hiển thị menu con khi hover vào mục cha */
+}
+
+#container ul li ul li {
+    width: 100%; /* Đảm bảo các mục con trong menu con chiếm toàn bộ chiều rộng */
+    border: 1px solid green; /* Đặt viền màu xanh lá cho các mục con */
+}

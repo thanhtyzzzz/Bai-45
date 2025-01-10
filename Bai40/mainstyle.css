@@ -1,0 +1,127 @@
+body {
+    background-color: #FFFFF0;
+}
+
+/* Định dạng header và flexbox */
+.header-container {
+    padding: 10px 0px 10px 5%;
+    background-color: #ff9a32;
+}
+
+.header-container h1 {
+    color: white;
+    text-shadow: 3px 2px 3px #8f8f8f;
+    font-weight: normal;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.a { background-color: #3001fd; }
+.b { background-color: #0034fe; }
+.c { background-color: #0067fe; }
+.d { background-color: #0099fe; }
+.e { background-color: #00cdfe; }
+.f { background-color: #00ffff; }
+
+/* Định dạng grid container */
+.grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    column-gap: 10px;
+}
+
+.left-container {
+    padding: 3%;
+    border: 2px solid blue;
+    background-color: white;
+}
+
+.left-container h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.right-container {
+    height: 100%;
+}
+
+.right-container h1 {
+    color: blue;
+    letter-spacing: 6px;
+}
+
+/* Định dạng bảng */
+table {
+    border-collapse: collapse;
+    width: 600px
+}
+
+table th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #ff9a32;
+}
+
+table td {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+table tr:first-child th {
+    border-top: 2px solid blue;
+}
+
+table tr:last-child td {
+    border-bottom: 2px solid blue;
+}
+
+table td:first-child, table th:first-child {
+    border-left: 2px solid blue;
+}
+
+table td:last-child, table th:last-child {
+    border-right: 2px solid blue;
+}
+
+
+/* Định dạng link */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Footer */
+.footer p {
+    text-align: center;
+}
+
+.footer strong {
+    color: blue;
+}
+
+/* Đường phân cách màu xanh */
+.blue-hr {
+    border: none;
+    background-color: blue;
+    height: 2px;
+}
+
+.font {
+    font-family: Arial, Helvetica, sans-serif;
+}
